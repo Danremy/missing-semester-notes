@@ -32,6 +32,7 @@ pre-commit 再检查一次
 提交成功
 
 虽然大型 IDE 基本都内置了这些功能，但我们还是需要学习如何在轻量编辑器中实现它们，这样才能真正理解这些功能背后的原理。安装 LLVM 后，可以使用 clang-format 实现代码格式化，使用 clang-tidy 实现静态检查和报错。而 pre-commit hook 则需要借助 Git 的 hook 机制来实现。虽然可以直接在 Git 项目的 .git/hooks 目录下编写 pre-commit 文件，但这种方式的缺点是配置不方便、难以共享、跨平台兼容性较差，而且当脚本逻辑变复杂时维护成本也比较高。因此，在实际开发中，通常会使用专门的工具来统一管理这些 hook。
+<img width="316" height="129" alt="image" src="https://github.com/user-attachments/assets/98ac9339-6e55-4192-be5c-37f16f7376ed" />
 
 
 
