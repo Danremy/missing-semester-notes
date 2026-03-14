@@ -60,12 +60,30 @@ Answer：
 question4：
 Write a Dockerfile for a simple Python application. Then write a docker-compose.yml that runs your application alongside a Redis cache.
 
-
-
 Answer：
+Project Structure（项目结构）
+missing-semester-docker/
+├── app.py
+├── docker-compose.yml
+├── Dockerfile
+└── requirements.txt
 
+app.py: Python 应用程序入口
 
+Dockerfile: 构建 Python 应用镜像
 
+docker-compose.yml: 定义多容器服务（app + redis）
+
+requirements.txt: Python 依赖列表
+
+通过 docker-compose 启动后，可以看到 Redis 容器正在运行：
+
+docker ps
+
+示例输出：
+
+CONTAINER ID   IMAGE     COMMAND                  CREATED        STATUS        PORTS
+9a1abc88c428   redis:7   "docker-entrypoint.s…"   3 minutes ago  Up 3 minutes  6379/tcp
 
 
 
