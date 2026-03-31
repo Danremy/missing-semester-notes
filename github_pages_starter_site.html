@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My GitHub Pages Site</title>
+  <style>
+    :root {
+      --bg: #f7f7fb;
+      --card: #ffffff;
+      --text: #1f2937;
+      --muted: #6b7280;
+      --accent: #2563eb;
+      --border: #e5e7eb;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 32px 20px 64px;
+    }
+
+    .hero {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 40px 28px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+    }
+
+    h1, h2 {
+      margin-top: 0;
+    }
+
+    h1 {
+      font-size: 2.2rem;
+      margin-bottom: 8px;
+    }
+
+    .subtitle {
+      color: var(--muted);
+      margin-bottom: 20px;
+    }
+
+    .button {
+      display: inline-block;
+      text-decoration: none;
+      background: var(--accent);
+      color: white;
+      padding: 12px 18px;
+      border-radius: 12px;
+      font-weight: bold;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+      margin-top: 24px;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 20px;
+    }
+
+    footer {
+      text-align: center;
+      color: var(--muted);
+      margin-top: 32px;
+      font-size: 0.95rem;
+    }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <section class="hero">
+      <h1>Hello!</h1>
+      <p class="subtitle">这是一个直接部署到 GitHub Pages 的简单静态网站。</p>
+      <p>
+       这是迷失的计算机教育第6章，打包与分发的作业6结果
+      </p>
+    </section>
+
+    <section class="grid">
+      <article class="card">
+        <h2>About Me</h2>
+        <p>我是Danremy,喜爱计算机科学,计算机图形学,3D动画,MG</p>
+      </article>
+      <article class="card">
+        <h2>My Project</h2>
+        <p>在我的Github主页,你可以找到我的MoCLI与DanEngine </p>
+      </article>
+    </section>
+
+    <footer>
+      <p>Built with HTML + CSS and published on GitHub Pages.</p>
+    </footer>
+  </main>
+</body>
+</html>
